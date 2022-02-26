@@ -1,3 +1,118 @@
+function f (funcao){
+    //callable
+    funcao()
+}
+
+function g (){
+    function outraFuncao (){
+        console.log ("Fui criada por g")
+    }
+    return outraFuncao
+}
+
+// const gResult = g()
+// gResult()
+
+g()()()
+undefined()
+// let umaFuncao = function () {
+//     console.log ("Fui armazenada em uma variável")
+// }
+// // umaFuncao()
+
+
+// f(function (){
+//     console.log ("Estou sendo passada para a f")
+// })
+
+// f(3)
+// const triplo = (n) => {
+//     return n * 3
+// }
+// console.log (triplo (5))
+
+// const dobro = (n) => {
+//     return n * 2
+// }
+// const dobro = (n) => n * 2
+// console.log (dobro (5))
+
+// const hello = () => {console.log ("Hello")}
+// hello()
+// () => {}
+
+
+
+
+// const triplo = function (n = 10){
+//     return n * 3
+// }
+// console.log (triplo(5))
+// console.log(triplo())
+
+// const dobro = function (n){
+//     return 2 * n
+// }
+// const resultado = dobro (6)
+// console.log (resultado)
+
+// function soma (a, b){
+//     return a + b
+// }
+// const res = soma (2, 3)
+// console.log(res)
+
+// //definição da função
+// function hello (){
+//     console.log("oi")
+// }
+// //chamada da função
+// //ou seja, ponto em que ela é colocada em execução
+// hello()
+// function hello (nome){
+//     console.log ("Oi, " + nome)
+// }
+// hello ("José")
+
+
+
+
+// public class Pessoa{
+//     public void falar (){
+//         System.out.println ("oi")
+//     }
+//     public void falar (String texto){
+//         System.out.println (texto);
+//     }
+//     public void falar (int a){
+
+//     }
+//     public void falar (String s, int a){
+
+//     }
+
+//     public void falar (int a, String s){
+
+//     }
+
+//     public void falar (double a){
+
+//     }
+
+//     public void falar (double b){
+
+//     }
+// }
+// Pessoa p = new Pessoa();
+// p.falar (3.4);
+// p.falar ("oi", 1);
+// p.falar (1, "oi");
+// p.falar();
+// p.falar("texto");
+// p.falar(1);
+
+
+
 // const valores = [1, 2, 3, 4]
 // const soma = valores.reduce ((ac, atual) => {
 //     return ac + atual
